@@ -1,0 +1,215 @@
+\documentclass[a4paper,12pt,twocolumn]{article}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[parfill]{parskip}
+\usepackage[style=apa]{biblatex}
+\addbibresource{learnlatex.bib}
+
+\newcommand\kw[1]{\textcolor{blue}{\itshape #1}}
+
+\includeonly{pref, chap1}
+
+\begin{document}
+\tableofcontents
+\listoffigures
+\include{pref}
+\include{chap1}
+
+\section{Title of first section}
+Testing hellof jieow jfiopwae jfipoew jiojfiew ojfieopw ijfokps;d jfiokfew f
+testing 123 test fsdfsd dsa d fdfdfd ds sd sd s ssssssssss dddddddddd dsds
+
+Something about \kw{apples} and \kw{oranges}.
+
+\begin{center}
+	\includegraphics[height=2cm]{example-image}
+\end{center}
+Text
+\begin{center}
+	\includegraphics[height = 0.25\textheight]{example-image}
+\end{center}
+test
+\begin{center}
+	\includegraphics[width = 1\linewidth]{example-image}
+\end{center}
+
+\begin{center}
+	\includegraphics[clip, trim = 0 0 50 50]{example-image}
+\end{center}
+
+\subsection{Subsection}
+yrdyfew fsF e\footnote{testing}. hellof~hel
+
+\subsubsection{subsubsection}
+testets
+
+\subsubsection{subsubsection}
+testets
+
+\paragraph{subsubsubsection}
+
+\section{Second section}
+not italic \emph{italic \emph{not siure} italic}.
+
+\section{Lists}
+Lists
+
+Ordered
+\begin{enumerate}
+	\item \begin{enumerate}
+		      \item \begin{enumerate}
+			            \item nested
+		            \end{enumerate}
+	      \end{enumerate}
+	\item Second
+	\item third
+\end{enumerate}
+
+Unordered
+\begin{itemize}
+	\item \begin{itemize}
+		      \item \begin{itemize}
+			            \item nested
+		            \end{itemize}
+	      \end{itemize}
+	\item random
+	\item stuff
+\end{itemize}
+
+testing \textit{test}
+
+\lipsum[1-4]
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width = 1\linewidth]{example-image-a.png}
+	\caption{caption}
+\end{figure}
+\lipsum[5]
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width = 1\linewidth]{example-image-b.png}
+	\caption{caption}
+\end{figure}
+\lipsum[6-10]
+
+\begin{tabular}{lcr}
+	Animal & Food  & Size   \\
+	dog    & meat  & medium \\
+	horse  & hay   & large  \\
+	frog   & flies & small  \\
+\end{tabular}
+
+\begin{tabular}{cp{5cm}}
+	Animal & Description                                                          \\
+	dog    & The dog is a member of the genus Canis, which forms part of the
+	wolf-like canids, and is the most widely abundant terrestrial
+	carnivore.                                                                    \\
+	\addlinespace
+	cat    & The cat is a domestic species of small carnivorous mammal. It is the
+	only domesticated species in the family Felidae and is often referred
+	to as the domestic cat to distinguish it from the wild members of the
+	family.                                                                       \\
+\end{tabular}
+
+\begin{tabular}{*{3}{c}}
+	\toprule
+	Animal & Food                      & Size   \\
+	\midrule
+	dog    & meat                      & medium \\
+	\cmidrule{1-2}
+	horse  & hay                       & large  \\
+	\cmidrule(rl){1-1}
+	\cmidrule{3-3}
+	frog   & flies                     & small  \\
+	fuath  & \multicolumn{2}{c}{hello}          \\
+	\bottomrule
+\end{tabular}
+
+\begin{tabular}{lll}
+	\toprule
+	\multicolumn{1}{c}{Animal} & \multicolumn{1}{c}{Food}    & \multicolumn{1}{c}{Size} \\
+	\midrule
+	dog                        & meat                        & medium                   \\
+	horse                      & hay                         & large                    \\
+	frog                       & flies                       & small                    \\
+	fuath                      & \multicolumn{2}{c}{unknown}                            \\
+	\bottomrule
+\end{tabular}
+
+\subsection{hello}
+\label{subsec:labelone}
+
+Text of material for the first subsection.
+\begin{equation}
+	e^{i\pi}+1 = 0
+	\label{eq:labeltwo}
+\end{equation}
+
+In subsection~\ref{subsec:labelone} is equation~\ref{eq:labeltwo}
+\lipsum[1]
+
+
+y = mx + c
+inline
+$y = mx + c$
+\[y = mx + c\]
+\[a^{b + c} + c_{d}\]
+\[\sin(\pi/2) * \log_{10}(100) * \theta^{2} \mu\]
+\[y = 2 \sin ^ {2} (\theta)\]
+\[
+	\int_{-\infty}^{+\infty} e^{-x^2} \, dx
+\]
+\begin{equation}
+	\int_{-\infty}^{+\infty} e^{-x^2} \, dx
+\end{equation}
+\begin{align*}
+	y     & = mx + c               \\
+	y     & = mx + c + d           \\
+	y     & = mx                   \\
+	y + c & = mx \quad\text{hello}
+\end{align*}
+\lipsum[1]
+\[
+	\begin{matrix}
+		a & b & c \\
+		d & e & f
+	\end{matrix}
+	\quad
+	\begin{pmatrix}
+		a & b & c \\
+		d & e & f
+	\end{pmatrix}
+	\quad
+	\begin{bmatrix}
+		a & b & c \\
+		d & e & f
+	\end{bmatrix}
+\]
+The matrix $\mathbf{M}$.
+
+\lipsum[3]
+
+{\itshape
+	\lipsum[4]
+}
+
+The mathematics showcase is from \autocite{Graham1995}, whereas
+there is some chemistry in \autocite{Thomas2008}.
+
+Some parenthetical citations: \autocite{Graham1995}
+and then \autocite[p.~56]{Thomas2008}.
+
+\autocite{alonso2020deepreinforcementlearningnavigation}
+
+\autocite[See][pp.~45--48]{Graham1995}
+
+Together \autocite{Graham1995,Thomas2008}
+
+\printbibliography
+
+\end{document}
