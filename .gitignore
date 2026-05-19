@@ -1,0 +1,23 @@
+# LaTeX build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Temporary / weird files
+*~
+*.swp
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
